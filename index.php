@@ -4,7 +4,7 @@ Stampiamo a schermo tutte le partite con questo schema:
 Olimpia Milano - Cantù | 55-60  -->
 
 <?php
-  $andata = [ 
+  $partiteAndata = [ 
     [ 
       "casa" => "Carpegna Prosciutto Pesaro",
       "puntiCasa" => 82,
@@ -24,3 +24,15 @@ Olimpia Milano - Cantù | 55-60  -->
       "puntiOspite" => 70,
     ]
   ];
+
+  var_dump($partiteAndata);
+
+  for ($i=0; $i < count($partiteAndata); $i++) {
+?>
+    <p style="font-size: 20px;">
+      <?= $partiteAndata[$i]['casa'] ?> -
+      <?= $partiteAndata[$i]['ospite'] ?> |
+      <?= $partiteAndata[$i]['puntiCasa'] ?> -
+      <?= $partiteAndata[$i]['puntiOspite'] ?>
+    </p>
+<?php } ?>
