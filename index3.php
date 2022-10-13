@@ -1,6 +1,6 @@
 <!-- Creare un array di array.
 Ogni array figlio avrà come chiave una data in questo formato: DD/MM/YYYY
-(ad es 31/01/2007) e come valore un array di post associati a quella data.
+(ad es 01/01/2007) e come valore un array di post associati a quella data.
 Stampare ogni data con i relativi post.
 
 <?php
@@ -43,3 +43,16 @@ $posts2022 = [
     ]
   ]
 ];
+
+var_dump($posts2022);
+
+foreach ($posts2022 as $data => $info) { ?>
+    <p> <?= $data ?> </p>
+    <?php
+    for ($i=0; $i < count($info) ; $i++) { ?>
+      <p><?= $info[$i]["title"] ?></p>
+      <p><?= $info[$i]["author"] ?></p>
+      <p><?= $info[$i]["text"] ?></p>
+      <br>
+    <?php  } ?>
+<?php  } ?>
