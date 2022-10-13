@@ -5,8 +5,8 @@ Stampare ogni data con i relativi post.
 
 <?php
 
-$posts2021 = [
-  '15/01/2021' => [
+$posts2022 = [
+  '30/10/2022' => [
     [
       'title' => 'Post 1',
       'author' => 'Gene Wild',
@@ -18,14 +18,14 @@ $posts2021 = [
       'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     ],
   ],
-  '08/02/2021' => [
+  '09/12/2022' => [
     [
       'title' => 'Post 3',
       'author' => 'Giga Robote',
       'text' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     ]
   ],
-  '22/03/2021' => [
+  '22/02/2022' => [
     [
       'title' => 'Post 4',
       'author' => 'Van Allen',

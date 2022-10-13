@@ -10,3 +10,16 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
   $eta = $_GET['age'];
 
   var_dump($nome, $email, $eta);
+
+  if ((strlen($nome) > 3) &&
+  filter_var($email, FILTER_VALIDATE_EMAIL) &&
+  filter_var($eta, FILTER_VALIDATE_INT)) {
+?>
+<p style="font-size: 25px; color: green;">
+  Accesso riuscito
+</p>
+<?php } else { ?>
+<p style="font-size: 25px; color: tomato;">
+  Accesso negato
+</p>
+<?php } ?>
